@@ -45,7 +45,7 @@ function contar(){
                 res.innerHTML += `${c} \u{1f449}`
             }
         }else{
-            for(var c = i; i >= f; c -= p){
+            for(var c = i; c >= f; c -= p){
                 res.innerHTML += `${c} \u{1f449}` 
             }
         }
