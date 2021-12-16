@@ -4,7 +4,8 @@ function tabuada(){
 
     if(num.value.length == 0){
         
-        document.alert('Por favor, insira algum número!')
+        alert('Por favor, insira algum número!')
+        tab.innerHTML = '<option>☝️ Digite um número acima ! </option>'
 
     }else{
         var n = Number(num.value)
@@ -24,9 +25,9 @@ function contar(){
     var passo = document.getElementById('txtp')
     var res = document.getElementById('res')
 
-    if(inicio.value.length == 0 || fim.value.length == 0 || passo.value == 0){
+    if(inicio.value.length == 0 || fim.value.length == 0 || passo.value.length == 0){
         
-        res.innerHTML = 'IMPOSSÍVEL A CONTAGEM'
+        res.innerHTML = 'Impossível a contagem!'
 
     }else{
 
@@ -36,7 +37,7 @@ function contar(){
         var p = Number(passo.value)
 
         if(p <= 0){
-            document.alert('Passo de número invalido! Passe a considerar passo como 1! ')
+            alert('Passo de numero invalido! Passe a considerar passo como 1! ')
             p = 1
         }
         if(i < f){
@@ -44,7 +45,7 @@ function contar(){
                 res.innerHTML += `${c} \u{1f449}`
             }
         }else{
-            for(var c = i; i >+ f; c -= p){
+            for(var c = i; i >= f; c -= p){
                 res.innerHTML += `${c} \u{1f449}` 
             }
         }
