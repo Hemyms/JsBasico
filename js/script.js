@@ -26,7 +26,7 @@ function contar(){
 
     if(inicio.value.length == 0 || fim.value.length == 0 || passo.value == 0){
         
-        res.innerHTML = 'IMPOSSIVEL A CONTAGEM'
+        res.innerHTML = 'IMPOSSÍVEL A CONTAGEM'
 
     }else{
 
@@ -36,7 +36,7 @@ function contar(){
         var p = Number(passo.value)
 
         if(p <= 0){
-            document.alert('Passo de numero invalido! Passe a considerar passo como 1! ')
+            document.alert('Passo de número invalido! Passe a considerar passo como 1! ')
             p = 1
         }
         if(i < f){
