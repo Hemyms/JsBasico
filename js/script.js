@@ -37,7 +37,7 @@ function contar(){
         var p = Number(passo.value)
 
         if(p <= 0){
-            alert('Passo de numero invalido! Passe a considerar passo como 1! ')
+            alert('Passo de número inválido! Passe a considerar passo como 1! ')
             p = 1
         }
         if(i < f){
